@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -68,6 +68,18 @@
         <h2>Upcoming Events</h2>
         <p>The following are events that are currently being held by the Computer Science Club</p>
         <div class="eventCardsRow1">
+
+          <div class="card">
+            <img src="csclub.jpg" alt="picholder" style="width:100%">
+<span id="eveDes">
+
+            <div class="eveDescrip">
+              <h4 class="eventhead"><b>Intro to Computer Science Club Event</b></h4>
+              <p>Feel free to drop by the Computer Science club and learn more about upcoming events, prep for technical interviews and chat! </p>
+            </div>
+          </div>
+		</span>
+
           <div class="card">
             <img src="csparty.jpg" alt="picholder" style="width:100%">
             <span id="eveDes">
@@ -78,59 +90,32 @@
             </div>
           </div>
         </span>
-          <div class="card">
-            <img src="" alt="picholder" style="width:100%">
-            <div class="eveDescrip">
-              <h4 class="eventhead"><b>Event 2</b></h4>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="" alt="picholder" style="width:100%">
-            <div class="eveDescrip">
-              <h4 class="eventhead"><b>Event 3</b></h4>
-              <p>Event description</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="eventCardsRow2">
-          <div class="card">
-            <img src="" alt="picholder" style="width:100%">
-            <div class="eveDescrip">
-              <h4 class="eventhead"><b>Event 4</b></h4>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="" alt="picholder" style="width:100%">
-            <div class="eveDescrip">
-              <h4 class="eventhead"><b>Event 5</b></h4>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="" alt="picholder" style="width:100%">
-            <div class="eveDescrip">
-              <h4 class="eventhead"><b>Event 6</b></h4>
-              <p>Event description</p>
-            </div>
-          </div>
         </div>
 
       </div>
     </div>
     <div class="container">
     <div id="faq">
-      <h2>FAQ</h2>
-      <h3>1) Who can join the Computer Science Club?</h3>
-      <p class="faqs">Anyone can join and learn about field of Computer Science.</p>
-      <h4>2) How often do you guys meet? </h3>
-      <p class="faqs">Our room is open during the semester from Monday -Thursday and we have events that happen throughout the semester.</p>
-      <h4>3) When do you guys meet? </h3>
-      <p class="faqs">We meet usually on Tuesdays and Thursdays during the semester. </p>
-      <h4>4) Where is the Computer Science club located?</h3>
-      <p class="faqs">The Computer Science club is located in basement of Ingersoll Hall of Brooklyn College.</p>
+      <h2>Frequently Asked Questions</h2>
+      <button class="accordion faqq"><h5>1) Who can join the Computer Science Club?</h5></button>
+	<div class="panel">
+      <p class="faqs">Anyone interested in learning about the Computer Science field. Those who want to practice and prep for their technical interview skills with other peers in the field. Whoever wishes to learn something new from fellow students, and lastly for those who just want to chat during their free time with other students! </p>
+	</div>
+
+      <button class="accordion faqq"><h5>2) How often do you guys meet? </h5></button>
+      <div class="panel">
+	<p class="faqs">During the semester our room is open from Monday - Thursday and of course when we have events that happen throughout the semester.</p>
+	</div>
+
+      <button class="accordion faqq"><h5>3) When do you guys meet? </h5></button>
+ 	<div class="panel">
+      <p class="faqs">During the semester we generally meet on Tuesdays and Thursdays during common hours. Feel free to drop by!</p>
+	</div>
+
+      <button class="accordion faqq"><h5>4) Where is the Computer Science club located?</h5></button>
+	<div class="panel">
+      <p class="faqs">The Computer Science club is located in basement of Ingersoll Hall of Brooklyn College, room 0317. </p>
+	</div>
 
     </div>
   </div>
@@ -139,11 +124,9 @@
 
   <div class="footer">
     <footer>
-      <div class="container">
+      <div class="social container">
       <span class="socialmed">
         <a href="https://www.facebook.com/groups/bc.cis.club/about/" title="Click here to go to the CS Facebook website!" class="fa fa-facebook"></a></span>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-twitter"></a>
         <a href="mailto:12syed17@gmail.com" class"emails"><i class="fa fa-envelope"></i></a>
       </span>
       <p id="copyright">© Brooklyn College Computer Science Club</p>
@@ -151,6 +134,20 @@
     </footer>
   </div>
   <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
   jQuery(document).ready(function($){
       $(window).scroll(function(){
           if ($(this).scrollTop() > 50) {
@@ -189,5 +186,6 @@
       }  // End if
     });
   });
+
   </script>
 </html>
