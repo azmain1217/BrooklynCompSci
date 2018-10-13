@@ -50,13 +50,13 @@
         <div class="bcHead">
           <h1>Brooklyn College Computer Science Club</h1>
         </div>
-        <div class="learnButton">
+        <div id="myNav" class="learnButton">
           <a href="#about"><button id="learnattr">Learn More!</button></a>
         </div>
       </div>
 
+      <div id="about">
       <div class="container">
-        <div id="about">
           <h2>About</h2>
           <p>Here, you will find information related to the Brooklyn College Computer Science Club,
           what we have to offer, as well as Events that will be held on campus during the Fall and Spring
@@ -97,23 +97,23 @@
       </div>
     <div class="container">
     <div id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <button class="accordion faqq"><h5>1) Who can join the Computer Science Club?</h5></button>
+      <h2 id="faqh">Frequently Asked Questions</h2>
+      <button class="accordion faqq"><h5>Who can join the Computer Science Club?</h5></button>
 	    <div class="panel">
         <p class="faqs">Anyone interested in learning about the Computer Science field. Those who want to practice and prep for their technical interview skills with other peers in the field. Whoever wishes to learn something new from fellow students, and lastly for those who just want to chat during their free time with other students! </p>
 	    </div>
 
-      <button class="accordion faqq"><h5>2) How often do you guys meet? </h5></button>
+      <button class="accordion faqq"><h5>How often do you meet? </h5></button>
       <div class="panel">
 	      <p class="faqs">During the semester our room is open from Monday - Thursday and of course when we have events that happen throughout the semester.</p>
 	    </div>
 
-      <button class="accordion faqq"><h5>3) When do you guys meet? </h5></button>
+      <button class="accordion faqq"><h5>When do you meet? </h5></button>
  	    <div class="panel">
         <p class="faqs">During the semester we generally meet on Tuesdays and Thursdays during common hours. Feel free to drop by!</p>
 	    </div>
 
-      <button class="accordion faqq"><h5>4) Where is the Computer Science club located?</h5></button>
+      <button class="accordion faqq"><h5>Where is the Computer Science club located?</h5></button>
 	    <div class="panel">
         <p class="faqs">The Computer Science club is located in basement of Ingersoll Hall of Brooklyn College, room 0317. </p>
 	    </div>
@@ -129,7 +129,7 @@
       <span class="socialmed">
         <a href="https://www.facebook.com/groups/bc.cis.club/about/" title="Click here to go to the CS Facebook website!" class="fa fa-facebook"></a></span>
       </span>
-      <p id="copyright">Copyright © Brooklyn College Computer Science Club</p>
+      <p id="copyright">Copyright 2018 © Brooklyn College Computer Science Club</p>
     </div>
     </footer>
   </div>
@@ -150,9 +150,9 @@ for (i = 0; i < acc.length; i++) {
   jQuery(document).ready(function($){
       $(window).scroll(function(){
           if ($(this).scrollTop() > 50) {
-              $('#myBtn').fadeIn('slow');
+              $('#myBtn').fadeIn('fast');
           } else {
-              $('#myBtn').fadeOut('slow');
+              $('#myBtn').fadeOut('fast');
           }
       });
       $('#myBtn').click(function(){
