@@ -1,33 +1,32 @@
-﻿<!doctype HTML>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
   <!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
     <title> Brooklyn College Computer Science Club </title>
   </head>
 
   <div class="mainbody">
 
-    <body data-spy="scroll" data-target="#navbar" data-offset="50">
+    <body data-spy="scroll" data-target="#mainnav" data-offset="50">
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">keyboard_arrow_up</i></button>
-        <nav id="mainnav" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <nav id="mainnav" class="mynav navbar navbar-expand-lg sticky-top">
         <div class="container">
         	<div id="navtog">
-          <button id="navtog" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button id="navtog" class="navbar-toggler custom-tog" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
           <div class="collapse navbar-collapse" id="myNav">
             <ul class="navbar-nav">
@@ -65,59 +64,59 @@
         </div>
       </div>
 
-    <div class="container">
-      <div id="events">
-        <h2>Upcoming Events</h2>
-        <p>The following are events that are currently being held by the Computer Science Club</p>
-        <div class="eventCardsRow1">
+      <div class="container">
+        <div id="events">
+          <h2>Upcoming Events</h2>
+          <p>The following are events that are currently being held by the Computer Science Club</p>
+          <div class="eventCardsRow1">
 
-          <div class="card">
-            <img src="csclub.jpg" alt="picholder" style="width:100%">
-<span id="eveDes">
+            <div class="card">
+              <img src="csclub.jpg" alt="picholder" style="width:100%">
+  <span id="eveDes">
 
-            <div class="eveDescrip">
-              <h4 class="eventhead"><b>Intro to Computer Science Club Event</b></h4>
-              <p>Feel free to drop by the Computer Science club and learn more about upcoming events, prep for technical interviews and chat! </p>
+              <div class="eveDescrip">
+                <h4 class="eventhead"><b>Intro to Computer Science Club Event</b></h4>
+                <p>Feel free to drop by the Computer Science club and learn more about upcoming events, prep for technical interviews and chat! </p>
+              </div>
             </div>
-          </div>
-		</span>
+  		</span>
 
-          <div class="card">
-            <img src="csparty.jpg" alt="picholder" style="width:100%">
-            <span id="eveDes">
-            <div class="eveDescrip">
-              <h4 class="eventhead"><b>Computer Science End Of The Year Party</b></h4>
-              <p>Join us for the End of the Year Party for Computer Science students!</p>
-              <p><a id="rsvp" href="https://tinyurl.com/subocsparty" title="Click here to RSVP for the CS Party!">RSVP Here</a></p>
+            <div class="card">
+              <img src="csparty.jpg" alt="picholder" style="width:100%">
+              <span id="eveDes">
+              <div class="eveDescrip">
+                <h4 class="eventhead"><b>Computer Science End Of The Year Party</b></h4>
+                <p>Join us for the End of the Year Party for Computer Science students!</p>
+                <p><a id="rsvp" href="https://tinyurl.com/subocsparty" title="Click here to RSVP for the CS Party!">RSVP Here</a></p>
+              </div>
             </div>
+          </span>
           </div>
-        </span>
+
         </div>
-
       </div>
-    </div>
     <div class="container">
     <div id="faq">
       <h2>Frequently Asked Questions</h2>
       <button class="accordion faqq"><h5>1) Who can join the Computer Science Club?</h5></button>
-	<div class="panel">
-      <p class="faqs">Anyone interested in learning about the Computer Science field. Those who want to practice and prep for their technical interview skills with other peers in the field. Whoever wishes to learn something new from fellow students, and lastly for those who just want to chat during their free time with other students! </p>
-	</div>
+	    <div class="panel">
+        <p class="faqs">Anyone interested in learning about the Computer Science field. Those who want to practice and prep for their technical interview skills with other peers in the field. Whoever wishes to learn something new from fellow students, and lastly for those who just want to chat during their free time with other students! </p>
+	    </div>
 
       <button class="accordion faqq"><h5>2) How often do you guys meet? </h5></button>
       <div class="panel">
-	<p class="faqs">During the semester our room is open from Monday - Thursday and of course when we have events that happen throughout the semester.</p>
-	</div>
+	      <p class="faqs">During the semester our room is open from Monday - Thursday and of course when we have events that happen throughout the semester.</p>
+	    </div>
 
       <button class="accordion faqq"><h5>3) When do you guys meet? </h5></button>
- 	<div class="panel">
-      <p class="faqs">During the semester we generally meet on Tuesdays and Thursdays during common hours. Feel free to drop by!</p>
-	</div>
+ 	    <div class="panel">
+        <p class="faqs">During the semester we generally meet on Tuesdays and Thursdays during common hours. Feel free to drop by!</p>
+	    </div>
 
       <button class="accordion faqq"><h5>4) Where is the Computer Science club located?</h5></button>
-	<div class="panel">
-      <p class="faqs">The Computer Science club is located in basement of Ingersoll Hall of Brooklyn College, room 0317. </p>
-	</div>
+	    <div class="panel">
+        <p class="faqs">The Computer Science club is located in basement of Ingersoll Hall of Brooklyn College, room 0317. </p>
+	    </div>
 
     </div>
   </div>
@@ -135,9 +134,8 @@
     </footer>
   </div>
   <script>
-var acc = document.getElementsByClassName("accordion");
+  var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -146,7 +144,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
   jQuery(document).ready(function($){
@@ -162,6 +160,15 @@ for (i = 0; i < acc.length; i++) {
           return false;
       });
   });
+
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 500) {
+       $('.navbar').addClass('shadow-header');
+    }
+    else {
+       $('.navbar').removeClass('shadow-header');
+    }
+});
 
   $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 100});
@@ -187,6 +194,5 @@ for (i = 0; i < acc.length; i++) {
       }  // End if
     });
   });
-
   </script>
 </html>
