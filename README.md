@@ -2,10 +2,6 @@
 
 > Brooklyn College Computer Science Club Webpage
 
-## Demo build
-
-https://hardcore-lamport-326061.netlify.com/
-
 ## Build Setup
 
 ```bash
